@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/first-page', 'TcpdfController@firstPage')->name('firstPage');
+Route::get('/second-page', 'TcpdfController@secondPage')->name('secondPage');
+Route::get('/download-pdf', 'TcpdfController@downloadPDF')->name('downloadPDF');

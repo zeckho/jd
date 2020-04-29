@@ -17,8 +17,9 @@
                         Tcpdf
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">First Page</a>
-                        <a class="dropdown-item" href="#">Second Page</a>
+                        <a class="dropdown-item" href="{{ route('firstPage') }}">First Page</a>
+                        <a class="dropdown-item" href="{{ route('secondPage') }}">Second Page</a>
+                        <a class="dropdown-item" href="{{ route('downloadPDF') }}">Download PDF</a>
                     </div>
                 </li>
                 <li class="nav-item">
