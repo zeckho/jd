@@ -1,6 +1,6 @@
 <header>
     <!-- Navigation -->
-    {{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    {{-- <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
         <div class="container">
             <a class="navbar-brand" href="#">Achmad Joko Priyono</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,15 @@
                         </div>
                     </li>
                 </ul>
+                <div class="my-2 my-lg-0">
+                    <a href="{{ route('carts') }}" class="btn btn-outline-success my-2 my-sm-0">{{ $totCart }}<i class="fa fa-shopping-cart"></i></a>
+                </div>
             </div>
         </div>
         
     </nav> --}}
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-        <div class="container">
         <a class="navbar-brand" href="#">achmadjp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,7 +71,6 @@
             <div class="my-2 my-lg-0">
                 <a href="{{ route('carts') }}" class="btn btn-outline-success my-2 my-sm-0">{{ $totCart }}<i class="fa fa-shopping-cart"></i></a>
             </div>
-        </div>
         </div>
     </nav>
 </header>

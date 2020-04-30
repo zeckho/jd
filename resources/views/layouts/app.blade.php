@@ -20,7 +20,7 @@
 
 <body>
     
-    @include('elements.newnav')
+    @include('elements.nav')
 
     <main role="main">
         <!-- Page Content -->
