@@ -15,19 +15,23 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
     
-    @include('elements.nav')
+    @include('elements.newnav')
 
-    <!-- Page Content -->
-    <div class="container">
-        @yield('content')
-    </div>
+    <main role="main">
+        <!-- Page Content -->
+        <div class="container py-5">
+            @include('elements.flash')
+            @yield('content')
+        </div>
+    </main>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
+    @yield('script')
 </body>
 
 </html>
